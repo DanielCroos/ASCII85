@@ -143,11 +143,8 @@ char *encode (char *plaintext, unsigned long key){
     return cipher_text;
 }
 
-#ifndef MARMOSET_TESTING
 int main();
-#endif
 
-#ifndef MARMOSET_TESTING
 int main() {
     char str0[]{ "Hello world!" };
     char str1[]{ "A Elbereth Gilthoniel\nsilivren penna miriel\n""o menel aglar elenath!\nNa-chaered palan-diriel\n""o galadhremmin ennorath,\nFanuilos, le linnathon\n""nef aear, si nef aearon!" };// [1]
@@ -173,5 +170,4 @@ int main() {
     
     return 0;
 }
-#endif
 
